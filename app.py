@@ -11,11 +11,6 @@ app.secret_key = 'abcd@1234'
 api = Api(app)
 
 
-@app.before_first_request
-def create_tables():
-    db.create_all()
-
-
 api.add_resource(FoodItems, '/items')
 
 if __name__ == '__main__':
