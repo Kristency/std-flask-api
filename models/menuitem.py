@@ -22,4 +22,9 @@ class MenuItem(db.Model):
         self.image_url = image_url
 
     def to_json(self):
-        return {'id': self.id, 'name': self.name, 'type': self.type.value, 'image_url': self.image_url}
+        return {
+            'id': self.id,
+            'name': self.name,
+            'type': self.type.value,
+            'image_url': self.image_url
+        }

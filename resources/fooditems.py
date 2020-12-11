@@ -12,7 +12,7 @@ mapping = {
 
 class FoodItems(Resource):
     def get(self):
-        found_items = MenuItem.query.all()
+        found_items = MenuItem.query.all()  # select * from menuitems
         if found_items:
             return [item.to_json() for item in found_items], 200
 

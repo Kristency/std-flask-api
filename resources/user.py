@@ -4,13 +4,16 @@ from models.user import User
 from db import db
 
 
-class UserRegister(Resource):
+class Users(Resource):
     def get(self):
         found_users = User.query.all()
         if found_users:
             return [user.to_json() for user in found_users], 200
 
         return {'message': 'No users found'}, 404
+
+
+class UserRegister(Resource):
 
     def post(self):
         data = request.get_json()
