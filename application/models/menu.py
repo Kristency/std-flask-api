@@ -1,4 +1,4 @@
-from db import db
+from ..db import db
 
 '''
 menus is intermediary association table because relationship between user and menu-items is many to many.

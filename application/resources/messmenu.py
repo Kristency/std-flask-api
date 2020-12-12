@@ -1,8 +1,8 @@
 from flask import request
 from flask_restful import Resource
-from models.user import User
-from models.menuitem import MenuItem
-from db import db
+from ..models.user import User
+from ..models.menuitem import MenuItem
+from ..db import db
 
 
 class MessMenu(Resource):

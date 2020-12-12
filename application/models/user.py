@@ -1,5 +1,5 @@
-from db import db
-from models.menu import menus
+from ..db import db
+from .menu import menus
 
 
 class User(db.Model):

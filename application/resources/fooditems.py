@@ -1,7 +1,7 @@
 from flask import request
 from flask_restful import Resource
-from models.menuitem import MenuItem, MenuItemTypeEnum
-from db import db
+from ..models.menuitem import MenuItem, MenuItemTypeEnum
+from ..db import db
 
 mapping = {
     'breakfast': MenuItemTypeEnum.BREAKFAST,
